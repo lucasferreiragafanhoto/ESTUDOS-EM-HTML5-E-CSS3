@@ -5,9 +5,12 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Mídias em HTML5</title>
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <h1>imagens dinamicas</h1>
+     <div class="centro">
+          <button>IMAGENS DINAMICAS</button>
+     </div>
      <p>tente abrir este site em varios dispositivos diferentes
           ou simplismente aumente ou diminua o tamanho do seu navegador
      </p>
@@ -16,5 +19,21 @@
           <source media="(max-width: 1050px )" srcset="imagem/foto-m.png" type="image/png">
           <img src="imagem/fotos-g.png" alt="imagem flexivel">
      </picture>
+
+     <h1>reproduzindo áudio</h1>
+     <p>vamos aprender a reprodzir áudio em HTML5.</p>
+     <audio src="midia/OsakaRain.mp3" controls autoplay></audio>
+     <br><audio src="midia/Rock.mp3" controls autoplay></audio><br>
+     <audio src="midia/Sydney'sSkyline.mp3" controls autoplay></audio><br>
+     <br><hr />
+     <!--VOU MOSTRA DOIS FORMATO DE AUDIO -->
+      <!--formato em MP3 WAV OGG-->
+      <audio preload="metadata" autoplay controls loop> 
+          <source src="midia/OsakaRain.mp3" type="audio/mpeg">
+          <source src="midia/OsakaRain.ogg" type="audio/ogg">
+          <source src="midia/OsakaRain.wav" type="audio wav">
+          <p>infelismente seu navegador não consegue carregar o áudio. <a href="midia/OsakaRain.mp3">clique aqui para abaixar 
+               seu arquivo mp3
+          </a> </p>
+           </audio>
 </body>
-</html>
